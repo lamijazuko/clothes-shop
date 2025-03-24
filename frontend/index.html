@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header id="navbar">
+    <nav>
+      <a href="./index.html">Home</a>
+      <div class="dropdown">
+          <button class="dropbtn">Products</button>
+          <div class="dropdown-content">
+            <a href="./pages/t-shirts.html">T-Shirts</a>
+            <a href="./pages/jackets.html">Jackets</a>
+            <a href="./pages/pants.html">Pants</a>
+            <a href="./pages/dresses.html">Dresses</a>
+          
+        </div>
+      </div>
+      <a href="./pages/user-profile.html">Profile</a>
+      <a href="./pages/cart.html"> Cart</a>
+      <div class="auth-links"></div>
+      <a href="./pages/login.html">Login</a>
+      <a href="./pages/register.html">Register</a>
+      
+    </nav>
+  </header>
+  <script src="./assets/js/navbar.js"></script>
+
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to our online store.</h1>
+      <p>Discover new trends.</p>
+      <a href="#featured-product" class="btn">Order now</a>
+    </section>
+
+    <section id="featured-product">
+      <h2>Shop by Category</h2>
+      <div class="featured-product-grid">
+        <div class="featured-product-grid">
+          <div class="featured-product-item" onclick="window.location.href='./pages/dresses.html'">
+            <img src="./assets/images/dresses.jpg" alt="Dresses" class="featured-product-image">
+            <div class="category-overlay">
+              <h3>Dressses</h3>
+            </div>
+          </div>
+          <div class="featured-product-item" onclick="window.location.href='./pages/jackets.html'">
+            <img src="./assets/images/jackets.jpg" alt="Jackets" class="featured-product-image">
+            <div class="category-overlay">
+              <h3>Jackets</h3>
+            </div>
+          </div>
+          <div class="featured-product-item" onclick="window.location.href='./pages/t-shirts.html'">
+            <img src="./assets/images/t-shirt.jpg" alt="T-Shirts" class="featured-product-image">
+            <div class="product-overlay">
+              <h3>T-shirts</h3>
+            </div>
+          </div>
+          <div class="featured-product-item" onclick="window.location.href='./pages/pants.html'">
+            <img src="./assets/images/pants.jpg" alt="Pants" class="featured-product-image">
+            <div class="category-overlay">
+              <h3>Pants</h3>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 E-Commerce Website. All rights reserved.</p>
+  </footer>
+  <script src="./assets/js/navbar.js"></script>
+</body>
+</html>
