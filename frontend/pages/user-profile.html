@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!--<link rel="stylesheet" href="../assets/css/user-profile.css"> <!-- New CSS for User Profile -->
+</head>
+<body>
+    <header id="navbar">
+      <nav>
+        <button id="menu-toggle" class="hamburger">&#9776;</button> <!-- Hamburger button -->
+        <a href="./index.html">Home</a>
+        <div class="dropdown" id="products-dropdown">
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+              <a href="./pages/t-shirts.html">T-Shirts</a>
+              <a href="./pages/jackets.html">Jackets</a>
+              <a href="./pages/pants.html">Pants</a>
+              <a href="./pages/dresses.html">Dresses</a>
+            
+          </div>
+        </div>
+        <a href="pages/user-profile.html">Profile</a>
+        <a href="pages/cart.html"> Cart</a>
+
+        <div class="auth-links">
+          <a href="login.html" id="login-btn">Login</a>
+          <a href="register.html" id="register-btn">Register</a>
+          <a href="#" id="logout-btn" class="hidden">Logout</a> 
+        </div>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+        <h2>User Profile</h2>
+    
+        <section class="profile-card">
+          <div class="profile-info">
+              <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+              <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+          </div>
+      </section>
+
+      <section class="order-history">
+          <h3>Order History</h3>
+          <div id="order-list">
+              <!-- Orders will be dynamically added here -->
+          </div>
+      
+      </section>
+  </main>
+
+  <footer>
+      <p>&copy; 2025 E-Commerce Website. All rights reserved.</p>
+  </footer>
+
+  <script src="../assets/js/user-profile.js"></script>
+  <script src="../assets/js/navbar.js"></script> 
+</body>
+</html>
+    
+  
